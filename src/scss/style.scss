@@ -1,0 +1,77 @@
+@import "./custom-variables";
+
+.form-container {
+  background-color: $purple;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form__container-form-wrapper {
+    background-color: $white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    align-items: center;
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: $deep-purple;
+    }
+
+    .title {
+      color: $deep-purple;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input {
+        padding: 15px;
+        border: none;
+        border-bottom: 1px solid $purple;
+
+        &::placeholder {
+          color: $placeholder;
+        }
+      }
+
+      button {
+        background-color: $btn-primary;
+        color: $white;
+        padding: 10px;
+        font-weight: bold;
+        border: transparent;
+        cursor: pointer;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $labels-color;
+        font-size: 12px;
+        cursor: pointer;
+
+        img {
+          width: 32px;
+        }
+      }
+    }
+
+    p {
+      color: $deep-purple;
+      font-size: 12px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  }
+}
