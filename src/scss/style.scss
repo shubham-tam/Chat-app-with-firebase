@@ -20,11 +20,11 @@
     .logo {
       font-weight: bold;
       font-size: 24px;
-      color: $deep-purple;
+      color: $purple-dark;
     }
 
     .title {
-      color: $deep-purple;
+      color: $purple-dark;
       font-size: 12px;
       font-weight: bold;
     }
@@ -57,7 +57,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        color: $labels-color;
+        color: $purple-200;
         font-size: 12px;
         cursor: pointer;
 
@@ -68,10 +68,111 @@
     }
 
     p {
-      color: $deep-purple;
+      color: $purple-dark;
       font-size: 12px;
       margin-top: 10px;
       font-weight: bold;
     }
+  }
+}
+
+.home {
+  background-color: $purple;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    border: 1px solid $white;
+    border-radius: 10px;
+    width: 65%;
+    height: 80%;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    flex: 1;
+    background-color: $purple-dark-200;
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: $purple-dark-400;
+      height: 50px;
+      color: $white-mild;
+      padding: 10px;
+      justify-content: space-between;
+
+      .logo {
+        font-weight: bold;
+      }
+
+      .user {
+        display: flex;
+        gap: 10px;
+      }
+
+      img {
+        background-color: $white-mild;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      button {
+        background-color: $purple-dark;
+        color: $white-mild;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+    }
+
+    .search {
+      border-bottom: 1px solid $gray;
+
+      .search__form {
+        input {
+          background-color: transparent;
+          border: 1px solid $light-gray;
+          border-radius: 8px;
+          color: $white;
+
+          &::placeholder {
+            color: $light-gray;
+            font-size: 10px;
+            text-align: center;
+          }
+        }
+      }
+      .search__userChat {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $white;
+
+        &:hover {
+          background-color: $purple-dark;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .search__userChat-info {
+        }
+      }
+    }
+  }
+
+  .chat {
+    flex: 2;
   }
 }
