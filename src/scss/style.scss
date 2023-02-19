@@ -187,6 +187,7 @@
 
   .chat {
     flex: 2;
+
     .chat-info {
       height: 50px;
       display: flex;
@@ -204,6 +205,51 @@
       img {
         height: 24px;
         cursor: pointer;
+      }
+    }
+
+    .messages {
+      background-color: $white-mild;
+      padding: 10px;
+      height: calc(100% - 120px);
+    }
+
+    .input {
+      height: 70px;
+      background-color: $white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        color: $purple-dark-400;
+        font: 18px;
+
+        &:placeholder {
+          color: $light-gray;
+        }
+      }
+
+      .input-send {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          height: 24px;
+          cursor: pointer;
+        }
+        button {
+          border: none;
+          padding: 8px 14px;
+          color: $white;
+          background-color: $purple-200;
+          border-radius: 10px;
+        }
       }
     }
   }
